@@ -25,9 +25,11 @@ if show_countries == True:
 
 # get specific country related covid stats
 cases_nl = covid.get_status_by_country_name("Netherlands")
-cases_eng = covid.
-United Kingdom
+cases_eng = covid.get_status_by_country_name("United Kingdom")
+cases_bel = covid.get_status_by_country_name("Belgium")
+cases_ger = covid.get_status_by_country_name("Germany")
+cases_france = covid.get_status_by_country_name("France")
 
 # printing country's data using for loop
-for x in cases:
+for x in cases_nl:
     print(x, ":", cases[x])
